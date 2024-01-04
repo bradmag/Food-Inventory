@@ -1,3 +1,0 @@
-public interface IsVegan extends IsVegetarian{
-	public static final boolean isVegan = true;
-}
