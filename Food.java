@@ -9,8 +9,9 @@ public class Food {
         this.expiryDate = expiryDate;
     }
 
-    public void eat() {
-        System.out.println("Yum! food is good!");
+    public String getRecipe() {
+        // Placeholder for recipe. Override this in subclasses for specific recipes.
+        return "Recipe for " + name;
     }
 
     @Override
