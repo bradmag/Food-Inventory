@@ -8,6 +8,8 @@
 5. Create options for cooking the top two/three items on the list
 6. If there is a recipe and an ingredient is not in the inventory recommend buying it. 
 
+## Notes:
+1. The main class is currently used mostly for testing different Methods and classes created.
 
 ### Fruit UML Diagram
 ![Fruit UML](https://user-images.githubusercontent.com/104655927/166113641-9ee5f3c4-688c-4da5-975f-e13beda469fd.png)
