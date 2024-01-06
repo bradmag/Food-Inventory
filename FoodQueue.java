@@ -3,9 +3,11 @@ import java.util.PriorityQueue;
 // Priority queue that will use the food comparator to prioritize what food will go bad first
 class FoodQueue {
     private PriorityQueue<Food> queue;
+    private ShoppingList shoppingList;
 
-    public FoodQueue() {
+    public FoodQueue(ShoppingList shoppingList) {
         this.queue = new PriorityQueue<>(new FoodComparator());
+        this.shoppingList = shoppingList;
     }
 
     public void add(Food item) {
@@ -13,7 +15,11 @@ class FoodQueue {
     }
 
     public Food poll() {
-        return queue.poll();
+        Food item = queue.poll();
+        if (item != null) {
+            shoppingList.addItem(item.name);
+        }
+        return item;
     }
 
     // Method to read the recipe for the next item without deleting it
