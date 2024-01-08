@@ -6,8 +6,14 @@ public class Potato extends Veggie {
         super("Potato", expiryDate); // Name is set as "Potato"
     }
 
-    @Override
+   @Override
     public String getRecipe() {
-        return "Mashed, Baked, Fries, Air Fried";
+        // Accessing the central recipe repository
+        Recipe recipe = RecipeBook.getRecipe("Potato Leek Soup");
+        if (recipe != null) {
+            return recipe.toString();
+        } else {
+            return "No recipe found for Potato.";
+        }
     }
 }
