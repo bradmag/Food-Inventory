@@ -6,7 +6,8 @@
 3. When things are removed from the shopping list (purchased) add them to the Inventory.
 4. Create options for cooking individual Items
 5. Create options for cooking the top two/three items on the list
-6. If there is a recipe and an ingredient is not in the inventory recommend buying it. 
+6. If there is a recipe and an ingredient is not in the inventory recommend buying it.
+7. Create a HashMap to store the recipes that the various classes can access.
 
 ## Notes:
 1. The main class is currently used mostly for testing different Methods and classes created.
