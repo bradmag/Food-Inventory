@@ -7,6 +7,12 @@ public class Meat extends Food {
 
     @Override
     public String getRecipe() {
-        return "Sear and butter baste the " + name;
+        Recipe recipe = RecipeBook.getRecipe("Butter Basted Meat");
+        if (recipe != null) {
+            return recipe.toString();
+        } else {
+            return "No recipe found for Meat.";
+        }
     }
 }
+
