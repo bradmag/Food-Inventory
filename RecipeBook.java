@@ -8,7 +8,7 @@ class RecipeBook {
     // Static initializer to pre-load recipes
     static {
         // Veggie Recipes
-
+        // Soup Recipes
         // French Onion Soup
          List<Ingredient> frenchOnionSoupIngredients = List.of(
             new Ingredient("Onion", "4 Peeled and sliced"),
@@ -30,9 +30,7 @@ class RecipeBook {
             "Add the warm broth to the onion mixture and boil for 10 minutes.",
             "Season to taste.",
             "When serving put a piece of bread on each bowl, cover with gruyere and broil until melted.");
-
         recipes.put("French Onion Soup", new Recipe("French Onion Soup", frenchOnionSoupIngredients, frenchOnionSoupSteps));
-
 
         // Potato Leek Soup
         List<Ingredient> potatoLeekSoupIngredients = List.of(
@@ -66,16 +64,35 @@ class RecipeBook {
             new Ingredient("Ground Cinnamon", "1/2 teaspoon"),
             new Ingredient("Salt and Pepper", "to taste"));
         List<String> winterSquashSoupSteps = List.of(
-            "Sauté onions and carrots in olive oil or butter until onions are translucent.",
+            "In a large soup pot (Dutch oven) saute onions and carrots in olive oil or butter until onions are translucent.",
             "Add garlic and cook for another minute.",
             "Add cubed squash and diced apple to the pot; stir.",
             "Pour in the broth and add ginger, cinnamon, salt, and pepper.",
             "Bring to a boil, then simmer for 20-30 minutes until squash and carrots are tender.",
-            "Puree the soup using an immersion blender or regular blender.",
+            "Blend the soup.",
             "Stir in coconut milk or half and half and warm through.",
             "Taste and adjust seasonings as needed.",
             "Serve hot, garnished with optional toppings.");
         recipes.put("Winter Squash Soup",new Recipe("Winter Squash Soup", winterSquashSoupIngredients, winterSquashSoupSteps));
+
+        // Carrot Ginger soup
+        List<Ingredient> carrotGingerSoupIngredients = List.of(
+            new Ingredient("Butter", "2 tablespoons"),
+            new Ingredient("Onions", "2, peeled and diced"),
+            new Ingredient("Chicken Broth", "6 cups"),
+            new Ingredient("Carrots", "2 pounds, peeled and sliced"),
+            new Ingredient("Fresh Ginger", "2 tablespoons, grated"),
+            new Ingredient("Half and Half", "1 cup"),
+            new Ingredient("Salt and Pepper", "to taste"));
+        List<String> carrotGingerSoupSteps = List.of(
+            "In a large soup pot (Dutch Oven) cook butter and onions until onions are translucent.",
+            "Add broth, carrots, and ginger. Cover and bring to a boil.",
+            "Reduce heat and simmer until carrots are tender",
+            "Blend the soup.",
+            "Return the pureed mixture to the pan and add the half and half.",
+            "Season to taste.");
+        recipes.put("Carrot Ginger Soup",new Recipe("Carrot Ginger Soup", carrotGingerSoupIngredients, carrotGingerSoupSteps));
+
 
         // Meat Recipes
 
